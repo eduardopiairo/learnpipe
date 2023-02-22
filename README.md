@@ -1,4 +1,6 @@
-# Let's play with the pipeline
+# LEARNPIPE
+
+My pipeline for laerning.
 
 ## Python environments
 
