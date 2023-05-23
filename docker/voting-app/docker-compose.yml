@@ -19,7 +19,7 @@ services:
     volumes:
      - ./vote:/app
     ports:
-      - "5000:80"
+      - "5001:80"
     networks:
       - front-tier
       - back-tier
@@ -34,7 +34,7 @@ services:
     volumes:
       - ./result:/app
     ports:
-      - "5001:80"
+      - "5002:80"
       - "5858:5858"
     networks:
       - front-tier
