@@ -1,6 +1,6 @@
 # LEARNPIPE
 
-My pipeline for laerning.
+My pipeline for learning.
 
 ## Python environments
 
@@ -11,3 +11,7 @@ You can create an environment using conda
 ```
 conda create --name playpipe python=3.10
 ```
+
+## Index
+
+> [Terraform](terraform/README.md)
