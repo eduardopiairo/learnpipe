@@ -60,9 +60,13 @@ The meta-arguments within resource blocks allow to define the behavior of a reso
 ## Top-level blocks
 
 - Fundamental blocks
-    - Terraform (settings) block
-    - Provider block
-    - Resource block
+    - Terraform (settings) block: special block used to define some behaviors;
+      - Required Terraform version
+      - List required providers
+      - Terraform backend
+      - Only constant values can be used!
+    - Provider block: Terraform relies on providers to ineract with remote systems;
+    - Resource block: each resource block describes one or more infrastructure objects; 
 - Variable blocks
     - Input variables block
     - Output values block
