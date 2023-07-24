@@ -136,6 +136,6 @@ dmypy.json
 
 
 # Terraform 
-terraform/.terraform
+terraform/aws/.terraform
 *.tfstate
 *.tfstate.*
