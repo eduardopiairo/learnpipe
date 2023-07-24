@@ -74,3 +74,18 @@ The meta-arguments within resource blocks allow to define the behavior of a reso
 - Calling / Referencing blocks
     - Data sources block
     - Modules block
+
+## Terraform Settings (aka Terraform block)
+
+Each Terraform block can contain a number of settings related to Terraform's behavior.
+- Required Terraform version
+- Required providers
+- Terraform backend
+
+## Terraform Provider
+
+Every Resource Type is implemented by a provider.
+
+- Provider requirements
+- Provider configuration
+- Dependency lock file
