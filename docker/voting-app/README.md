@@ -63,3 +63,28 @@ The voting application only accepts one vote per client browser. It does not reg
 This isn't an example of a properly architected perfectly designed distributed app... it's just a simple
 example of the various types of pieces and languages you might see (queues, persistent data, etc), and how to
 deal with them in Docker at a basic level.
+
+
+## Work with DOCKER
+
+### build
+
+docker build . -t voting-app
+
+docker build . -t worker-app
+
+docker build . -t result-app
+
+### run
+
+docker run -p 5001:80 voting-app
+
+docker run -d --name=redis redis
+
+docker run -p 5001:80 --link redis:redis voting-app
+
+docker run -d --name=db -e POSTGRES_PASSWORD=postgres postgres:9.4
+
+docker run  --link redis:redis --link db:db worker-app
+
+docker run -d -p 5002:80 --link db:db result-app
