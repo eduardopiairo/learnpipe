@@ -5,7 +5,6 @@ on:
     branches: 
       - "main"
       - feature/*
-      - prbranch
 
   pull_request:
     branches: [ "main" ]
