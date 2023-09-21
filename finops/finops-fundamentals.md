@@ -75,7 +75,6 @@ FinOps appeared because people did not learnead to mamage cloud costs. So FinOps
 4. (Repete)
 
 
-
 ## CAPEX and OPEX
 
 - Capital Expenditures (long term investioment) (ownership of assets)
@@ -87,3 +86,75 @@ FinOps appeared because people did not learnead to mamage cloud costs. So FinOps
 ROI: Return On Investiment (profit)
 
 TCO: Total Cost Onwership - total cost of cloud technology
+
+
+## Chargeback
+
+- Is a policy of allocating resource usage costs to actual business units.
+- Is a common method to avoid overspending.
+- Provides visibility and accountability for resource spending (what was spent and who spent).
+- Accounting model.
+- Tagging (and other metadata) implementation
+
+
+## FinOps Team
+
+Should be responsible for:
+- Defining enterprise cloud usage strategy;
+- Definig and adjusting enterprise cloud budgets
+- Setting up the cloud usage practices and guidelines
+- Reviewing the data and determining corrective actions as needed.
+
+
+Cloud costs should be visible to evryone => Showback
+
+Establishing a team by identifying specific members from:
+- Cloud Center of Excellence
+- Sponsor(s)
+- Engineering
+- Finance
+- Application owners
+- DevOps
+- And other business units
+
+### Team Roles (= Personas)
+- FinOps Practitioner
+- Financial Controller
+- Cloud Practitioners
+- Executives
+- Engineers
+
+
+### Centralized FinOps Team
+- Increases collaboration
+- Increase culture
+- Removes duplication of efforts
+- Streamlines planning and decisions
+- Removes bias and reduce disagreements
+- Alignment with business goals
+
+The level of centralization needs to be adapted to the organization.
+
+## Organization Changes and adoption
+
+1. Executive buy-in
+2. Obtaining funding to establish a FinOps practice (people, training and tools)
+3. assigning responsible members (key personas) to drive adoption
+
+## Motivations
+
+- FinOps practitioners must build reporting and processes that reduce the need for both finance and engineering teams (efficiency);
+- Common language enables teams to familiarize themselves with a common set of terms that we understand (remove barriers);
+- Every FinOps stakeholder will have specific motivations.
+
+
+## FinOps Triangle
+- Quality
+- Speed
+- Cost
+
+
+
+
+
+
