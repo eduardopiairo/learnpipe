@@ -1,6 +1,6 @@
 # FinOps
 
-## Section 1 - Cloud Computing Fundamentals 
+## Cloud Computing Fundamentals 
 
 ### Five essential characteristics, three service modesl, four deployment models
 
@@ -36,11 +36,11 @@ Deployment Models (how we use cloud):
 - Connectivity
 - Billing
 
-## Section 2 - FinOps Fundamentals 
+## FinOps Fundamentals 
 
 FinOps is an evolving cloud financial management discipline and cultural practice that enables organizations to get maximum business value by helping engineering, finance, technology and business teams to collaborate on data-driven spending decisions.
 
-- An effecient way to teams manage their cloud costs
+- An efficient way to teams manage their cloud costs
 - Ownership driven and supported by a central group
 - Work towards to financial and operational control
 - A way prioritize cloud costs optimization
@@ -135,26 +135,90 @@ Establishing a team by identifying specific members from:
 
 The level of centralization needs to be adapted to the organization.
 
-## Organization Changes and adoption
+### Organization Changes and adoption
 
 1. Executive buy-in
 2. Obtaining funding to establish a FinOps practice (people, training and tools)
 3. assigning responsible members (key personas) to drive adoption
 
-## Motivations
+### Motivations
 
 - FinOps practitioners must build reporting and processes that reduce the need for both finance and engineering teams (efficiency);
 - Common language enables teams to familiarize themselves with a common set of terms that we understand (remove barriers);
 - Every FinOps stakeholder will have specific motivations.
 
 
-## FinOps Triangle
+### FinOps Triangle
 - Quality
 - Speed
 - Cost
 
 
 
+## FinOps Capabilities
+- FinOps domains represents a sphere of activity or knowledge;
+- Each FinOps domain consists of FinOps capabilities;
+- Capabilities are "functional activities" to meet the demands of a FinOps practice/domain.
 
+### Domains
+- Understand cloud usage & cost
+- Performance tracking & benchmarking
+- Real-time decision making
+- Cloud rate optimization
+- Cloud usage optimization
+- Organizational alignment
+
+#### Understand cloud usage & cost
+- Cost allocation (metadat & hierarchy)
+- Data analysis and showback
+- Managing shared cost
+- Data ingestion & normalization
+- Managing anomalies
+- Forecasting
+- Measuring unit costs
+
+#### Performance tracking & benchmarking
+- Measuring unit costs
+- Managing commitment based discounts
+- Resource utilization and efficiency
+- Forecasting
+- Budget management
+- Managing anomalies
+
+
+#### Real-time decision making
+- Cost allocation (metadat & hierarchy)
+- Data analysis and showback
+- Managing anomalies
+- Managing commitment based discounts
+- Resource utilization and efficiency
+- Measuring unit costs
+- Establishing a FinOps decision & Accountability structure
+
+
+#### Cloud rate optimization
+- Data analysis and showback
+- Managing commitment based discounts
+
+
+#### Cloud usage optimization
+- Data analysis and showback
+- Onboarding workloads
+- Resource utilization and efficiency
+- Workload management & automation
+
+
+#### Organizational aligment (Policy & Governance)
+- Establishing FinOps culture
+- Managing shared costs
+- Chargeback & IT Finance integration
+- Data analysis and showback
+- Budget management
+- FinOps education & enablement
+- Establishing a FinOps decision & Accountability structure
+- Cloud policy & governance
+- IT asset management integration
+
+## 6 Principles of FinOps
 
 
