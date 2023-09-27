@@ -71,4 +71,24 @@
 - Available services;
 - Pricing;
 
+## IAM: Users and Groups
+
+- IAM: Identity and Access Management (Global Service)
+- Users: are people within your organization, and can be grouped. (don't have to belong a group, or can belong to multiple groups)
+- Groups: only contain user
+- Permissions: users or groups can be assigned policies (json documents)
+    - Least privilege principles
+
+### Policies
+- Version: policy language version
+- Id: identified of the policy (optional)
+- Statement: one or more statments (required)
+    - Sid: identifier of the statement (optional)
+    - Effect: allow or deny
+    - Principal: account / user /role
+    - Action: list of actions this policy allows or denies
+    - Resource: list of resources to which the acctions applied to
+    - Condition: conditions for when this policy is in effect (optional)
+
+
 
