@@ -1,0 +1,18 @@
+version: '3'
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      SA_PASSWORD: "Strong@Passw0rd"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    network_mode: host
+  flyway:
+    image: flyway/flyway
+    command: -url="jdbc:sqlserver://localhost;databaseName=master;encrypt=true;trustServerCertificate=true" -user=sa -password=Strong@Passw0rd -connectRetries=60 info
+    volumes:
+      - .:/flyway/sql
+    depends_on:
+      - sqlserver
+    network_mode: host
