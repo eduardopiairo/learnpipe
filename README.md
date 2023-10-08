@@ -15,3 +15,4 @@ conda create --name playpipe python=3.10
 ## Index
 
 > [Terraform](terraform/README.md)
+> [FinOps](finops/finops-fundamentals.md)
