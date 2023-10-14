@@ -54,3 +54,83 @@ RED method:
     - The amount of failing requests per second
 - Duration
     - The time taken by those requests
+
+
+## Prometheus Ecosystem
+
+- Prometheus is a time series-based , open-source monitoring system.
+- It collects data by sending HTTP requests for hosts and services on metric endpoints, which it then makes available for analysis and alerting using a powerful query language.
+
+- Prometheus server
+- Alertmanager
+- Exporters
+- Pushgateway
+- Visualization 
+
+
+### Exporter
+
+An exporter is nothing more than a piece of software that collects data from a service or application and exposes it via HTTP in the Prometheus format.
+
+
+## Metrics Foundamentals
+
+- Metrics are the core resources
+
+### Time Series Data
+
+Time series data can usualy be defined as a sequence of numerical data points that are indexed chronologically from the same source.
+ 
+A time series database store the follwoing components:
+
+- A timestamp
+- A value
+- Some context about the value, encoded in a metric name or in associated key/value pairs.
+
+Example:
+
+timestamp=123456, Company=ACME, location=headquarters, beverage=coffee, value=4012
+
+### Samples
+
+Samples are the collected data pints, and they represent the numerical value of time series data. 
+
+### Cardinality
+
+The term is often used to mean the number of unique time series that are produced by a combination of metric names and their associated label names/values.
+
+### Core Metric Types
+
+- Counters
+- Gauges
+- Histograms
+- Summaries
+
+
+#### Counter
+This is a strictly cumulative metric whose value can only increase.
+
+#### Gauge
+Is a metric that snapshots a given measurement at the time of collection, which can increase or decrease (temperature, disk space, memory usage)
+
+#### Histogram
+Histograms allow you to retain some granularity by counting events into buckets that are configurable on the client side, and also by providing a sum of all obeserved values.
+
+
+#### Summaries
+Summaies are similar to histograms in some ways, but present different trade-offs and are generally less useful.
+
+
+### Aggregations
+
+- Longitudinal 
+- Cross-sectional
+
+Aggregation is the process that reduxes or summarizes the raw data, which is to say that it receives a set of data points as input and produces a smaller set as output.
+
+
+## Run a Prometheus server
+
+There are two main types of configuration on a Prometehus server:
+- command-line flags
+- configuration files (runtime configuration)
