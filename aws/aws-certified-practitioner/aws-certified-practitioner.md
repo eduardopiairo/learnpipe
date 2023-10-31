@@ -90,5 +90,42 @@
     - Resource: list of resources to which the acctions applied to
     - Condition: conditions for when this policy is in effect (optional)
 
+- IAM Password Policy
+- Multi Factor Authentication (MFA)
+    - Your password + Security device you own
+    - If the passwords is stolen or hacked, the account is not compromised
+        - Virtual MFA device
+        Universal 2nd Factor (U2F) Security Key
+        - Hardware Key Fob MFA device
+
+### How can users access AWS
+- AWS Management Console (protected by password + MFA)
+- AWS Command Line Interface (CLI) (protected by access keys)
+- AWS Software Developer Kit (SDK) - for code (protected by access keys)
+
+
+### IAM Security Tools
+- IAM Credentials Report (account level)
+- IAM Access Advisory (user level)
+
+## EC2
+
+EC2 = Elastic Compute Cloud = IaaS
+
+Sizing and configuration:
+- Operating Systems
+- Compute power & cores (CPU)
+- Random-access memory (RAM)
+- Storage space
+    - Network-attached (EBS & EFS)
+    - Hardware (EC2 Instance Store)
+- Network card: speed of the card, Public IP adress
+- Firewall rules. security group
+- Bootstrap script (configured at first launche): EC2 User data
+
+
+
+
+
 
 
