@@ -6,4 +6,7 @@ My pipeline for learning.
 
 > [Terraform](terraform/README.md)
 
-> [FinOps](finops/finops-fundamentals.md)
+> FinOps
+- [FinOps Fundamentals](finops/finops-fundamentals.md)
+- [FinOps Framework](finops/finops-foundation-framework.md)
+
