@@ -413,3 +413,49 @@ Every capability and functional activity can be at a different level of maturity
 - Difficult edge cases are being addressed
 - Very high goals/KPIs set on the measurement of success
 - Automation is the preferred approach
+
+## FinOps Personas
+- FinOps Practitioner
+- Executives
+- Business/Product Owner
+- Engineering and Operations
+- Finance
+- Procurement
+
+### FinOps Practitioner
+-Primary Goal: Drive best practices into the organization through education, standardization, and cultural growth and support.
+
+### Executives
+
+#### CEO
+Primary Goal: Assurance that cloud investments are aligned with business objectives.
+
+#### CTO / CIO
+Primary Goal: Leverage technology to give the business a market and competitive advantage.
+
+#### CFO
+Primary Goal: Manage the cost of cloud utilization (among other costs across the org) and ensuring that money is wisely spent.
+
+### Business/Product Owner
+
+#### Product Owner
+Primary Goal: Quickly bring new products and features to market with an accurate price point.
+
+### Engineering and Operations
+
+#### Engineering Lead
+Primary Goal: Deliver faster and high quality services to the organisation, whilst maintaining business as usual.
+
+### Finance
+
+#### IT Finance Manager
+Primary Goal: Accurately budget, forecast, and report cloud costs.
+
+### Procurement
+Primary Goal: Cloud platform relationship management.
+
+### ITAM Leader / Practitioner (NEW)
+Primary Goal: Ensure that all IT assets are being used to their fullest potential and that the organization is getting the best value for its investments in IT. Also ensuring that the organization is fully compliant with all licensing and regulatory requirements.
+
+### Sustainability Practitioner within IT (NEW)
+Primary Goal: To integrate sustainability principles into enterprise IT operations, reducing environmental impact, and driving cost and carbon efficiencies.
