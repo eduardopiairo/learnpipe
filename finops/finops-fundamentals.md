@@ -67,7 +67,7 @@ oring
 1. Inform (Visibility and allocation)
 2. Optimize (Utilization)
 3. Operate
-4. (Repete)
+4. (Repeat)
 
 
 ## CAPEX and OPEX
