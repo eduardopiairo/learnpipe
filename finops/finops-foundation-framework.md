@@ -3,8 +3,8 @@
 The FinOps Framework provides the operating model for how to establish and excel in the practice of FinOps.
 
 - [x] FinOps Domains
-- [ ] FinOps Capabilities
-- [ ] FinOps Maturity Model
+- [x] FinOps Capabilities
+- [x] FinOps Maturity Model
 - [ ] FinOps Personas
 - [ ] FinOps Phases
 - [ ] FinOps Principles
@@ -380,3 +380,36 @@ Establishing a FinOps decision & accountability structure is about capturing an 
 These decision-making and accountability structures help cross-functional teams work out the processes and decision trees they’ll need to use to tackle challenges and resolve conflicts, in addition to having them be proactively available when they need to take action ahead of time.
 
 This structure should include clear lines of authority and guidelines, enabling issues to be escalated and resolved, and giving senior decision makers the opportunity to make informed decisions quickly and in a consistent manner.
+
+
+## FinOps Maturity Model
+A “Crawl, Walk, Run” approach to performing FinOps enables organizations to start small, and grow in scale, scope, and complexity as business value warrants maturing a functional activity.
+
+In assessing the state of an organization’s FinOps capability or domain, we can also use these maturity designations to identify where we are currently operating, and to identify areas we’d like to move from a Crawl to a Walk, or from a Walk to a Run maturity.
+
+In other words, establishing a Walk stage in a particular capability is not necessarily a good or bad thing, FinOps practitioners should focus less on maturing each Capability to “Run” for everything and more on achieving the outcomes the FinOps capabilities aim to provide.
+
+Prioritize maturing the capabilities that provide your organization the highest business value.
+
+Every capability and functional activity can be at a different level of maturity.
+
+### Crawl
+- Very little reporting and tooling
+- Measurements only provide insight into the benefits of maturing the capability
+- Basic KPIs set for the measurement of success
+- Basic processes and policies are defined around the capability
+- Capability is understood but not followed by all the major teams within the organization
+- Plans to address “low hanging fruit”
+
+### Walk
+- Capability is understood and followed within the organization
+- Difficult edge cases are identified but decision to not address them is adopted
+- Automation and/or processes cover most of the Capability requirements
+- Most difficult edge cases (ones that threaten the financial well-being of the organization) are identified and effort to resolve has been estimated
+- Medium to high goals/KPIs set on the measurement of success
+
+### Run
+- Capability is understood and followed by all teams within the organization
+- Difficult edge cases are being addressed
+- Very high goals/KPIs set on the measurement of success
+- Automation is the preferred approach
