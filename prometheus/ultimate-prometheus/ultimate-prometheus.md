@@ -53,3 +53,5 @@
     - Quantiles are calculated in client side
         - It will move pressure from Prometheus to our apps
         - No ability to choose the time window
+
+## PromQL (Prometheus Query Language)
