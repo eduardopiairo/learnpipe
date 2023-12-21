@@ -60,14 +60,12 @@ Why FinOps:
 
 FinOps appeared because people did not learnead to mamage cloud costs. So FinOps is a try of managing costs has on-prem resources style with budgeting approval.
 
-### FinOps Principles
-oring
 
 ### FinOps Lifecycle
 1. Inform (Visibility and allocation)
 2. Optimize (Utilization)
 3. Operate
-4. (Repete)
+4. (Repeat)
 
 
 ## CAPEX and OPEX
@@ -149,7 +147,6 @@ The level of centralization needs to be adapted to the organization.
 - Cost
 
 
-
 ## FinOps Capabilities
 - FinOps domains represents a sphere of activity or knowledge;
 - Each FinOps domain consists of FinOps capabilities;
@@ -182,7 +179,7 @@ The level of centralization needs to be adapted to the organization.
 
 
 #### Real-time decision making
-- Cost allocation (metadat & hierarchy)
+- Cost allocation (metadata & hierarchy)
 - Data analysis and showback
 - Managing anomalies
 - Managing commitment based discounts
@@ -371,7 +368,7 @@ Spend = Usage x Rate
 - AWS Trusted Advisor
 - AWS Budgets
 - Cost Explorer
-- AWS Cost & USage Reports
+- AWS Cost & Usage Reports
 - Biling Alerts
 - Billing Preferences
 

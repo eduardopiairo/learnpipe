@@ -89,7 +89,7 @@ Run docker containers in a single docker host.
 docker run -d --name=redis redis
 
 
-### docker un link containers
+### docker run link containers
 
 --link connects two containers
 
@@ -98,3 +98,89 @@ docker run -d --name=vote -p 5000:80 --link redis:redis voting-app
 ```
 
 connects the voting app and the redis ccontainers.
+
+```
+docker-compose build
+```
+
+```
+docker-compose up
+```
+
+## Docker Registry
+
+image:  docker.io/nginx/nginx
+        
+        docker.io   -->     registry    (gcr.io)
+        nginx       -->     user or account
+        nginx       -->     image or repository
+
+docker login private-registry.io
+
+
+## Docker Storage
+
+File Storage --> /var/lib/docker
+                    - aufs
+                    - containers
+                    - image
+                    - volumes
+
+
+Layered architecture: each instruction is a layer.
+    - docker is able to reuse layers since they are in cache
+
+Layers:
+    - Image layer: Read Only
+    - Container layer: Read Write
+
+```
+docker volume create data_volume
+```
+
+/var/lib/docker
+    - volumes
+        - data_volume
+
+```
+docker run -v data_volume:/var/lib/mysql mysql
+```
+
+```
+docker run -mount type=bind,source=/data/mysql,target=/var/lib/mysql mysql
+```
+
+Storage drivers (based on OS):
+- AUFS
+- ZFS
+- BTRFS
+- Device Mapper
+- Overlay
+- Overlay2
+
+
+```
+docker run -v /opt/data:/var/lib/mysql -d --name mysql-db -e MYSQL_ROOT_PASSWORD=db_pass123 mysql
+```
+
+## Docker Networking
+
+Default networks:
+- Bridge (docker run ubuntu)
+- none (docker run ubuntu  --network=none)
+- host (docker run ubuntu  --network=host)
+
+User defined networks
+
+```
+docker network create --driver bridge --subnet 182.18.0.0/16 custom-isolated-network
+```
+
+Embedded network: use container name. 
+
+
+## Container Orchestration
+
+- docker swarm
+- kubernetes
+- mesos
