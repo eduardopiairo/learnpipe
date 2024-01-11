@@ -55,3 +55,94 @@
         - No ability to choose the time window
 
 ## PromQL (Prometheus Query Language)
+
+### Arithmetic Operators
+- Addition (+)
+- Subtraction (-)
+- Multiplication (*)
+- Division (/)
+- Modulo (%)
+- Power (^)
+
+### Binary Operators
+- And
+- Or
+- Unless
+
+### Aggregation Operators
+- max(M)
+- min(M)
+- sum(M)
+- count(M)
+- avg(M)
+- quantile (0.5, M)
+- count_values("abc", M)
+- topk(2, M)
+- bottomk(2, M)
+
+### Query Functions
+- abs(v instant-vector)
+    - Coverts values to their absolute form
+- absent(v instant-vector)
+    - Returns 1 if the given vector doesn't exist
+- absent_over_time(v range-vector)
+    - Same as absent but for a range
+- ceil(v instant-vector)
+    - Rounds sample values up
+- floor(v instant-vector)
+    - Rounds sample values down
+- clamp_max(v instant-vector, max scalar)
+    - Return sample values with an upper limit
+- clamp_min(v instant-vector, max scalar)
+    - Return sample values with a lower limit
+- changes(v range-vector)
+    - The number of times a vector changed in the given time
+- delta(v range-vector)
+    - The difference between the first and the last sample values
+- idelta(v range-vector)
+    - The difference between the last two sample values
+- increase(v range-vector)
+    - The difference between the first and the last sample values
+    - To be used with counters because it can handle counter resets
+- rate(v range-vector)
+    - increase(v) / number of seconds in time range
+- irate(v range-vector)
+    - idelta(v) / time delta between last two samples
+- label_join
+    - Same as joining a string from a string array, but with labels
+- label_replace
+    - Used to replace a label's value or create a new label
+- resets(v range-vector)
+    - The number of times a counter was reset
+- sort(v instant-vector)
+    - Sorts vector by element's sample value
+- sort_desc(v instant-vector)
+    - Sorts vector by element's sample value in descending order
+- timestamp(v instant-vector)
+    - Returns the samples time for each time series in the vector
+- scalar(v instant-vector)
+    - Returns the value for a single elemnt vector
+- vector(s scalar)
+    - Wraps a scalar in a single element instant-vector
+- histogram_quantile(q float, v instant-vector)
+    - Calculates the q quantile on a histogram
+
+
+Date and time functions:
+- day_of_month(M)
+- day_of_week(M)
+- days_in_month(M)
+- hour(M)
+- minute(M)
+- month(M)
+- year(M)
+
+
+Agregation over time
+- max_over_time(M[30s])
+- min_over_time(M[30s])
+- sum_over_time(M[30s])
+- count_over_time(M[30s])
+- avg_over_time(M[30s])
+
+## AlertManager
