@@ -33,3 +33,13 @@ cd prometheus
 touch alert-rules.yml
 ```
 
+
+## Grafana Integration
+
+```
+docker run -d --name=grafana -p 3000:3000 grafana/grafana 
+```
+
+user: admin
+pass: admin
+

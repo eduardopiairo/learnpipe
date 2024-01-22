@@ -145,4 +145,5 @@ Agregation over time
 - count_over_time(M[30s])
 - avg_over_time(M[30s])
 
-## AlertManager
+
+
