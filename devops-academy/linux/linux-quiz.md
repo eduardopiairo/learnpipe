@@ -1,4 +1,4 @@
-# Linux Basics Quiz
+# Linux Basic Quiz
 
 ## 1. What is Linux?
 - a. A commercial operating system
