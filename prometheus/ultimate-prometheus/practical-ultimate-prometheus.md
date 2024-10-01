@@ -1,5 +1,7 @@
 # Practical side of Ultimate Prometheus
 
+## Prometheus
+
 - Installation directory: /Users/eduardopiairo/playground/prometheus/prometheus-2.47.2
 
 Run prometheus
@@ -9,3 +11,35 @@ Run prometheus
 ```
 
 Go to localhost:9090
+
+
+## Go Application
+```
+go run . 
+```
+
+## AlertManager
+```
+./alertmanager --config.file=alertmanager.yml 
+```
+
+### Configure AlertManager and Prometheus
+
+1. Create new alert file
+
+```
+cd prometheus
+
+touch alert-rules.yml
+```
+
+
+## Grafana Integration
+
+```
+docker run -d --name=grafana -p 3000:3000 grafana/grafana 
+```
+
+user: admin
+pass: admin
+
