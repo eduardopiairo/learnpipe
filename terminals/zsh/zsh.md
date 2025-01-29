@@ -26,9 +26,9 @@ Install command:
 brew install zsh-autosuggestions
 ```
 
-Activate autosuggestions by adding the following at the end of your .zshrc:
+Activate autosuggestions:
 ```
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+echo "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 ```
 
 
@@ -42,5 +42,5 @@ brew install zsh-history-substring-search
 ```
 
 ```
-echo 'source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh' >> ~/.zshrc
+echo "source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh" >> ~/.zshrc
 ```
