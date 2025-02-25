@@ -1,10 +1,13 @@
 # Infrastructure Monitoring with Prometheus
 
-## The value of monitoring
+
+## Chapter 1 - Monitoring Fundamentals
+
+### The value of monitoring
 - With the growing complexity of infrastructures, it has become critical to attain a global view of all different components of and infrastructure.
 - You can look at monitoring as a source of information for maintaining healthy systems, production-wise and business-wise.
 
-## Monitoring Components
+### Monitoring Components
 - Metrics
     - Exposes certain system resource, application action, or business characteristic as a specific point in time value;
 - Logging
@@ -16,7 +19,7 @@
 - Visalization
     - This is a graphical representation of metrics, logs, or traces.
 
-## Monitoring Categories
+### Monitoring Categories
 - Whitebox
     - The system under observation surfaces data about its internal state and the performance of critical sections.
     - The telemetry data is usually handled in the following ways:
@@ -27,12 +30,12 @@
     - The application or hosts is observed from the outside and, consequently, this approach can be fairly limited.
     - You last line of defense - you can rely on blackbox monitoring to assess availability.
 
-## Metrics Collection
+### Metrics Collection
 Two apporaches:
 - Push
 - Pull (Prometheus)
 
-## What to measure
+### What to measure
 Google four golden signs:
 - Latency
     - The time required to serve a request
@@ -52,7 +55,7 @@ RED method:
     - The time taken by those requests
 
 
-## Prometheus Ecosystem
+## Chaper 2 - An Overview of the Prometheus Ecosystem
 - Prometheus is a time series-based , open-source monitoring system.
 - It collects data by sending HTTP requests for hosts and services on metric endpoints, which it then makes available for analysis and alerting using a powerful query language.
 
@@ -62,12 +65,20 @@ RED method:
 - Pushgateway
 - Visualization 
 
-
 ### Exporter
 An exporter is nothing more than a piece of software that collects data from a service or application and exposes it via HTTP in the Prometheus format.
 
 
-## Metrics Foundamentals
+## Chapter 3 - Setting Up a Test Environment
+
+### Recomended software
+- VirtualBox
+- Vagrant
+- Minikube
+- Kubectl
+
+
+##  Chapter 4 - Prometheus Metrics Foundamentals
 - Metrics are the core resources
 
 ### Time Series Data
