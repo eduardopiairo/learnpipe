@@ -21,7 +21,7 @@ spec:
         - name: USERS
           value: "eduardopiairo"
         - name: GITHUB_TOKEN
-          value: "ADD_YOUR_GITHUB_TOKEN_HERE"
+          value: "<ADD_YOUR_GITHUB_TOKEN_HERE>"
         ports:
           - containerPort: 9171
         imagePullPolicy: Always
