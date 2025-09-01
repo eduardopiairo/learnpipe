@@ -56,7 +56,7 @@ RED method:
 
 
 ## Chaper 2 - An Overview of the Prometheus Ecosystem
-- Prometheus is a time series-based , open-source monitoring system.
+- Prometheus is a time series-based, open-source monitoring system.
 - It collects data by sending HTTP requests for hosts and services on metric endpoints, which it then makes available for analysis and alerting using a powerful query language.
 
 - Prometheus server
@@ -84,7 +84,7 @@ An exporter is nothing more than a piece of software that collects data from a s
 ### Time Series Data
 Time series data can usualy be defined as a sequence of numerical data points that are indexed chronologically from the same source.
  
-A time series database store the follwoing components:
+A time series database store the following components:
 
 - A timestamp
 - A value
@@ -128,7 +128,65 @@ Summaies are similar to histograms in some ways, but present different trade-off
 Aggregation is the process that reduxes or summarizes the raw data, which is to say that it receives a set of data points as input and produces a smaller set as output.
 
 
-## Run a Prometheus server
+## Chapter 5 - Running a Prometheus Server 
+
+## Deep dive in configuration file
 There are two main types of configuration on a Prometheus server:
 - command-line flags
 - configuration files (runtime configuration)
+
+### The config section
+- Prometheus configuration file path is defined by the flag `--config.file`
+- Prometheus by default will look for a file named `prometheus.yml` in the current working directory.
+
+### The storage section
+- The `--storage.tsdb-path` flag defines the base path to the data storage location.
+- This defaukts to `data/` on the current wokring directory.
+- The local storage can only be written to by a single Prometheus instance at a time.
+
+### The web section
+- The `--web.external-url` flag sets the base URL.
+
+## Prometheus configuration file walkthrough
+At a high level, we can split the configuration file into the following sections:
+- global
+- scrape_configs
+- alerting
+- rule_files
+- remote_read
+- remote_write
+
+### Global Configuration
+The `global` configuration defines the default parameters for every other configuration section.
+
+```
+global:
+    scrape_interval: 1m
+    scrape_timeout: 10s
+    evaluation_interval: 1m
+    external_lables:
+        dc: dc1
+        prom: prom1
+```
+
+### Scrape Configuration
+Scrape is the action of collecting metrics through an HTTP request from a target instance, parsing the response, and ingesting the collected samples to storage. 
+
+- The default HTTP endpoint is `/metrics/`
+
+
+## Prometheus in Kubernetes
+
+```
+minikube start
+```
+
+```
+minikube dashboar
+```
+
+Create the namespace `monitoring`
+```
+kubectl create namespace monitoring
+kubectl apply -f monitoring-namespace.yaml 
+```

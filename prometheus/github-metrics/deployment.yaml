@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name:  gh-exporter
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run:  gh-exporter
+  template:
+    metadata:
+      labels:
+        run:  gh-exporter
+    spec:
+      containers:
+      - name: gh-exporter
+        image: githubexporter/github-exporter:latest
+        env:
+        - name: ORG
+          value: "devopsdelivery"
+        - name: USERS
+          value: "eduardopiairo"
+        - name: GITHUB_TOKEN
+          value: "ADD_YOUR_GITHUB_TOKEN_HERE"
+        ports:
+          - containerPort: 9171
+        imagePullPolicy: Always
+        resources:
+          limits:
+            memory: 512Mi
+            cpu: 200m
+        securityContext:
+          allowPrivilegeEscalation: false
