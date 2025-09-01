@@ -1,18 +1,8 @@
 
 # LEARNPIPE
 
-My pipeline for learning.
+>_My pipeline for learning._
 
-## Index
-
-> [Terraform](terraform/README.md)
-
-> FinOps
-- [FinOps Fundamentals](finops/finops-fundamentals.md)
-- [FinOps Framework](finops/finops-foundation-framework.md)
-
-
-## Learning Topics Table
 
 | Topic                                         | Description                                                      |
 | --------------------------------------------- | ---------------------------------------------------------------- |
