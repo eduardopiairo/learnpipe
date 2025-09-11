@@ -179,3 +179,65 @@ Examples:
 
 ### Homework
 Create your own platform reference architecture.
+
+
+## Module 3: Platform tooling 101
+
+> If you follow Golden Paths everybodt wins
+
+### What tools platform teams are using
+
+#### Developer Control Plane
+This layer focuses on providing developers with self-service capabilities and a streamlined, user-friendly experience.
+
+- Version Control
+- Developer Portals
+- Infrastructure as Code (IaC)
+
+#### Integration & Delivery Plane
+This plane encompasses the tools and processes involved in building, testing, and deploying software efficiently and reliably.
+
+- CI/CD
+- Container Registries
+- Platform Orchestrators
+
+#### Resource Plane
+The Resource Plane represents the underlying infrastructure that supports the applications and services. This can encompass cloud resources, on-premises data centres, or a hybrid environment.
+
+- Infrasctructure provisioning 
+- Container Orchestration
+- Resource Management
+
+#### Monitoring & Logging Plane
+The Monitoring & Logging Plane is crucial for gaining insights into the performance, health, and behaviour of applications and the underlying infrastructure.
+
+- Metrics collection
+- Data visualization
+- Logs aggregation
+- Alerting
+
+#### Security Plane
+The Security Plane focuses on ensuring the security and compliance of the platform and the applications running on it.
+
+### Hands on lab
+
+https://github.com/InternalDeveloperPlatform/pe-course-labs
+
+#### CNOE
+CNOE is presented as a framework designed for scaffolding an Internal Developer Platform (IDP), employing a pipeline-based backend. This implementation primarily utilises cloud-native open-source tools such as Argo Workflows and ArgoCD for Continuous Integration and Continuous Delivery, Git for version control and as a container registry, and optionally integrates with Backstage as a developer portal.
+
+- CNOE is a framework to builf cloud-native INternal Developer Platform mainly based on CNCF open-source tools.
+- CNOE is a platform builder, not your platform. 
+- It's a tool for scaffolfing an IDP using open-source tools. 
+- Pipeline based backend
+
+https://github.com/InternalDeveloperPlatform/pe-course-labs/blob/main/cnoe.md
+
+#### PocketIDP
+Conversely, the PocketIDP demonstrates an IDP architecture centred around a Platform Orchestrator (Humanitec), representing a vendor and graph-based backend. This approach focuses on creating a unified workflow that connects developer application code with resource definitions. The PocketIDP implementation incorporates Git for version control, Backstage as a developer interface, Humanitec Pipelines for Continuous Delivery, and Score for defining application workload specifications.
+
+- IDP with a Platform Orchestrator.
+- Graph-based backend 
+- The purpose of a Platform Orchestrator is to connect the developer's application source code to the platform source code laid out by platform/infra teams.
+
+https://github.com/InternalDeveloperPlatform/pe-course-labs/blob/main/pocketidp.md
