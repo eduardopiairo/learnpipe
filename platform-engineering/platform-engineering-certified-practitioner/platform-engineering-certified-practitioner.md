@@ -241,3 +241,64 @@ Conversely, the PocketIDP demonstrates an IDP architecture centred around a Plat
 - The purpose of a Platform Orchestrator is to connect the developer's application source code to the platform source code laid out by platform/infra teams.
 
 https://github.com/InternalDeveloperPlatform/pe-course-labs/blob/main/pocketidp.md
+
+
+## Module 4: The art of building golden paths
+
+### What's a Golden Path?
+
+Also known as Happy Path!
+
+- Platform user performs a task
+- Minimal cognitive load
+- Nothing can go wrong
+- Standardize and automated
+- Diff to "golden cage" (you can also go off path)
+
+A golden path is a preconfigured, paved road that offers developers an end-to-end workflow for common tasks. A true golden path allows for flexibility; developers should be able to go off-path when needed.
+
+In contrast, a golden cage arises when developers are forced to follow potentially non-ideal patterns with little to no flexibility
+
+### How to identify Golden Paths
+
+#### Value Stream Mapping
+- Visualization of steps of the value stream
+- Lean methodology to identify waste
+- "Waste" in our context:
+    - Waiting times
+    - Manual touchpoints/handoffs
+    - Context switching 
+    - Operational steps without adding value
+
+Key metrics:
+- Lead time
+- Process time (work time)
+- % of CA (complete and accurate)
+
+IDP can also act as a discovery mechanism, allowing developers to request new functionalities, which can then inform the creation of new golden paths over time.
+
+### Common Golden Paths
+- Scaffolfing, create a new service
+
+### Pain points in day 2 operations
+- Operations that developers do every day
+
+Add a postgress to an existing workload and deploy all the way to production
+- Developer
+- Ops/infra
+- Security
+
+Frequency makes the diffference:
+- Scaffolding: 3x per year
+- Deployment. 3 x per day
+
+### Golden Paths - Sorted by Impact
+- Daily deployments including changes in configuration (happening every day)
+- Spinning up ephemeral environments (needed with every review)
+- Adding resources (happening sometimes in the project lifetime)
+- Scaffolding new workloads and create environments (happening once per project / product)
+
+## Homework
+- Mapp out at least 2 end-to-end developer workflows
+    - How are they corrently performed?
+    - Whtat's the golden path version?
