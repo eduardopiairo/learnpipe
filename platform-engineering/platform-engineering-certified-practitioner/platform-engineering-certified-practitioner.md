@@ -1,5 +1,6 @@
 # Platform Engineering Certified Practitioner
 
+
 ## Module 1: Intro to Platform Engineering
 
 ### What is platform engineering?
@@ -302,3 +303,112 @@ Frequency makes the diffference:
 - Mapp out at least 2 end-to-end developer workflows
     - How are they corrently performed?
     - Whtat's the golden path version?
+
+
+## Module 5: Find the right abstractions
+
+### Why do we need abdstractions?
+
+"Let's introduce an abstraction layer to shield away complexity..."
+
+### Frontend vs Backend
+
+#### Frontend
+- Ergonomics & design
+- How to use someting
+- How to display something
+- How to handle a lot of aspects of one thing at the same time
+
+We use abstractions as a term in general to describe details being hidden behind a simpler interface
+- Visual
+- Usage
+- Collaborative
+
+##### Portals
+- Backstage
+- Cortex
+- Port
+
+Pros
+- Visualization
+- Overview in terms of onwership
+- Managment loves them
+
+Cons:
+- Risk of low developer adoption
+- Context switching
+- ClickOps
+- Risk incomplete visualization, lack of integrations
+
+Portals can function as an abstraction layer to visualize existing information (meta dat) but they do not solve underlying problems. 
+
+##### Declarative configurations (workload spec)
+- Score
+    - developer-centric
+    - platform-agnostic
+    - declarative (workload specification)
+- Radius
+- KubeVela
+
+
+#### Backend
+- Automation
+- How to use something
+- How to lifecycle something
+- How to handle one aspect of a lot of things at once at the same time
+
+
+## Module 6: Infrastructure Platform Engineering (IPE)
+
+### Infrastructure PLatform Engineering (IPE) definition
+IPE is the discipline of building internal infrastructure products that present infrastructure to users or other parts of the platform like portals in an easely consumable was as a service.
+
+Infrastructure platforms are self-service tools that allow non-expert users to deploy and manage infrastructure themselves while I&O retains governance, security and compliance. 
+
+IPE is about service delivery and can be defined by the following core principles:
+- Productizing infrastructure
+- Standardization
+- Automation
+- Self-service
+
+
+### Rules for designing APIs for platforms
+- Ubiquitious
+- Interface agnostic
+- Be prepared for complex backend logic
+
+### What makes good infrastructure "products"?
+- Interfaces
+- Better Processs
+- Composability
+
+### A way to enhance composability: Implement cross-cutting-concerns
+- Cross-cuting
+- Usability
+- Convevience in Commodity
+
+Examples: observability, cost, security
+
+### Everything as Code
+
+- Repos: the usual status quo
+- Scaffolding: first step forward
+
+Do it right: clear separation of concerns
+- App source code (app devs)
+    - workload sources code
+    - workload spec (score)
+    - Docker file
+    Pipeline yaml
+- Platform source code (ops/infra)
+    - Resource definitions
+    - Infrastructure as code
+    - Automation/compliance
+
+Why?
+- 95% less config files to main (no longer 1-1 between app and resources config)
+- high degrees of standardization
+- security baked in
+- allows for specialization
+- allows for self-service
+- easy to update
