@@ -412,3 +412,101 @@ Why?
 - allows for specialization
 - allows for self-service
 - easy to update
+
+
+## Module 7: How to build your Minimum Viable Platform (MVP)
+
+### MVP Why, What, How?
+
+- Do not get beyond planning phase
+- Try to build something really large that would take them 2-5 years
+- Fail to prove value and get further sponsorship
+- Fail to gain stakeholder buy-in
+- Fail to generate adoption for the platform
+
+Risk of failure: low value, low adoption, no funding
+
+A MVP (Minimum Viable Platform) is foundational version of a platform designed to quickly demonstrate value and support scalability without requiring extensive initial development.  
+
+### Make Platform Engineering Predictable
+
+MVP Program
+- Duration: 8 weeks
+- Outcome: Demoable first platform running
+Production Readiness Program (PRP)
+- Duration: 8 weeks
+- Outcome: First teams using platform daily
+Adoption Program
+- Outcome: Large scale adoption
+
+### Desired outcomes by persona
+- Infra & Ops teams: develop technical conviction that platform is vending machine layer for their infrastructure
+- App devs: convinced that platform will enable developer selservice at low cognitive load
+- Security teams: convinced that the design i secure and future-proof
+- Executives: belive that ROI justifies investment in production-grade platform  
+
+### Overall goals of an MVP
+- Show value within weeks, not years
+- Generate stakeholder buy in ("what's in for me?")
+- Ensure long term funding
+- Set the stage for adoption
+
+### From design perspective, MVPs should be
+1. Representative 
+2. Repeatable
+3. Iterative
+4. Innovative
+
+### MVP Framework
+Phase 1: Discovery
+- Track 1: Tech - design reference architecture and define scope
+    - MVP technical Discovery Workshop
+        - Which tools are already in use?
+        - What is missing?
+        - Define tartget reference architecture
+        - Define golden paths you want to start with
+- Track 2: Business - measure status quo
+    - MVP Objetive + Goals Planning Workshop
+        - Business objectives
+        - Technical objectives
+        - KPIs and scucess criteria
+- Track 3: Security - understand security posture
+    - Security workshop
+        - Document security requirements
+Phase 2: Integration
+- Track 1: Tech - integrate platform tooling
+    - Admin/RBAC
+    - Cloud provider integration
+    - Cluster connection
+    - Deploy sample application
+    - Envrionment creation for non-prod envs
+    - resource creation/definitions
+- Track 2: Business - develop business case
+- Track 3: Security - gather requirements
+Phase 3: Deployment
+- Track 1: Tech - Onboard 1st app
+    - Application integration
+    - Resources matching
+    - Values + Secrets
+    - CI/CD pipeline setup
+    - Portal integration, if required
+    - Workload spec setup (Score)
+    - E2E deployment test 
+- Track 2: Business - involve finance team
+- Track 3: Security - engage with security team
+Phase 4: Adoption
+- Track 1: Tech - onboard 1st team
+    - Success testing
+    - First dev team onboarding
+    - Demo prep + training
+    - Platform roadmap planning
+    - Additional team demos + onboarding planning
+- Track 2: Business - measure MVP, build ROI 
+- Track 3: Security - green light to production
+    - Full-scale security requirements confirmation
+
+#### MVP Success Metrics
+- Complexity index
+- Onboarding time
+- Service create time
+- Survey.... (development satisfaction score)
