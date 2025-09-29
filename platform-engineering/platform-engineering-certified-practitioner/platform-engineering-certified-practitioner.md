@@ -510,3 +510,72 @@ Phase 4: Adoption
 - Onboarding time
 - Service create time
 - Survey.... (development satisfaction score)
+
+
+## Module 8: How to sell your MVP to key stakeholders
+
+### Who you are selling to
+- App developers
+- Infra teams
+- Executives
+- Security teams
+- Architects and CCOE
+
+### Understand your customers and stakeholders's problems first
+- Which personas do you sell to?
+- What are their pain points/problems?
+- What really matters to them?
+- What are the symptoms of their problems?
+- What's the impact on the persona?
+- What's the impact on the business?
+- How your platform solves their pain points?
+- What are proof points/metrics?
+
+### App Developers
+Main pain points:
+- Waiting times
+- Cognitive load (complexity)
+- Fear of screwing up
+- Shadow ops
+
+#### How to sell to application developers?
+- Build tight customer feedback loops
+- Provide internal documentation
+- Brand your platform, give it a name
+- Onboarding and training workshops
+- Identify the right first team
+- Convert the first into advocates
+
+### Infra teams
+Main pain points:
+- Lack of standardization
+- Ticket Ops
+- Need to compete against third party like cloud provider interfaces
+- Under constant pressure, treated as a cost center 
+
+#### How to sell to Infra teams?
+- A commmon layer that equilizes consumption experience of infra and cloud, boosts efficiency, improves security, and strengthens compiance across all providers 
+- Be able to reduce costs that are ever-growing
+- Gain control and overshight
+
+### Security teams
+Main pain points:
+- Developers do not care about security
+- Time consuming manual security checks
+- Fear of overseeing security violations
+
+#### How to sell to Security teams?
+- Security by design by implementing security best practices into developer's golden paths
+- Enforce gardrails and policies by default
+- Automated security checks
+
+### Executives
+Main pain points:
+- Costs
+- Long time to market, slow innovation cycles
+- Security, compliance
+- Talent retention
+
+#### How to sell to Executives?
+- Create business case
+- Make a ROI calculation the core of it
