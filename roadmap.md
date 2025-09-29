@@ -71,3 +71,14 @@
 ## 17. Service Mesh
 - [ ] Istio
 - [ ] Consul
+
+## 18. Platform Engineering
+- [ ] Platform as a Product
+- [ ] Developer self-service portals (Backstage, Port)
+- [ ] Golden paths and paved roads
+
+## 19. AI
+- [ ] Prompt Engineering
+- [ ] Gen AI (LLMs)
+- [ ] Agentic AI
+- [ ] MCP
