@@ -124,7 +124,7 @@ This is the primary interface through which both application developers and plat
 This is where your CI/CD pipelines and other automation logic reside. It acts as the back-end of your platform, containing the logic that can be orchestrated to deliver platform capabilities. This includes tools for building and storing images, deployment tools, and potentially a Platform Orchestrator.
 
 - CI Pipeline
-- Imgae Registry
+- Image Registry
 - Platform Orchestrator
 - CD Pipeline
 - Infrastructure Control Plane
