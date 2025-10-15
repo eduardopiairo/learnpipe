@@ -110,7 +110,6 @@ Key aspects:
 ### Platform tooling landscape (The 5 planes)
 
 #### 1 - Developer Control Plane
-
 This is the primary interface through which both application developers and platform engineers interact with the platform's capabilities.
 
 - IDE
@@ -120,17 +119,15 @@ This is the primary interface through which both application developers and plat
     - Platform Source Code
 
 #### 2 - Integration & Delivery Plane
-
 This is where your CI/CD pipelines and other automation logic reside. It acts as the back-end of your platform, containing the logic that can be orchestrated to deliver platform capabilities. This includes tools for building and storing images, deployment tools, and potentially a Platform Orchestrator.
 
 - CI Pipeline
-- Imgae Registry
+- Image Registry
 - Platform Orchestrator
 - CD Pipeline
 - Infrastructure Control Plane
 
 #### 3 - Resource Plane
-
 This represents the underlying infrastructure – your physical infrastructure or cloud resources.
 
 - Compute
@@ -139,22 +136,18 @@ This represents the underlying infrastructure – your physical infrastructure o
 - Services
 
 #### 4 - Monitoring & Logging Plane
-
 This layer address observability aspects.
 
 - Observability
 - Analytics
 
 #### 5 - Security Plane
-
 This layer adress security aspects.
-
 - Secrets Management
 - Security
 
 
 ### Where do we start?
-
 Start with the __backend__. Here's why:
 
 - Focus on core logic
@@ -184,7 +177,7 @@ Create your own platform reference architecture.
 
 ## Module 3: Platform tooling 101
 
-> If you follow Golden Paths everybodt wins
+> If you follow Golden Paths everybody wins
 
 ### What tools platform teams are using
 
@@ -286,12 +279,12 @@ IDP can also act as a discovery mechanism, allowing developers to request new fu
 
 Add a postgress to an existing workload and deploy all the way to production
 - Developer
-- Ops/infra
+- Ops/Infra
 - Security
 
 Frequency makes the diffference:
 - Scaffolding: 3x per year
-- Deployment. 3 x per day
+- Deployment: 3x per day
 
 ### Golden Paths - Sorted by Impact
 - Daily deployments including changes in configuration (happening every day)
@@ -360,7 +353,7 @@ Portals can function as an abstraction layer to visualize existing information (
 
 ## Module 6: Infrastructure Platform Engineering (IPE)
 
-### Infrastructure PLatform Engineering (IPE) definition
+### Infrastructure Platform Engineering (IPE) definition
 IPE is the discipline of building internal infrastructure products that present infrastructure to users or other parts of the platform like portals in an easely consumable was as a service.
 
 Infrastructure platforms are self-service tools that allow non-expert users to deploy and manage infrastructure themselves while I&O retains governance, security and compliance. 
