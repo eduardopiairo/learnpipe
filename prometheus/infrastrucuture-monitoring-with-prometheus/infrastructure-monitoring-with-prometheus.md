@@ -182,7 +182,7 @@ minikube start
 ```
 
 ```
-minikube dashboar
+minikube dashboard
 ```
 
 Create the namespace `monitoring`
@@ -190,3 +190,14 @@ Create the namespace `monitoring`
 kubectl create namespace monitoring
 kubectl apply -f monitoring-namespace.yaml 
 ```
+
+## Chapter 6 - Exporters and Integrations
+
+### The Node Exporter
+The Node exporter is the most well-known Prometheus exporter. It provides over 40 collectors for different areas of the OS.
+
+### Blackbox Monitoring
+As probing is made from outside and without knowledge regarding the inner working of the system, this is classified as blackbox monitoring.
+
+## Prometheus Query Language - PromQL
+

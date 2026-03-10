@@ -37,7 +37,7 @@ A big number of organizations will adopt platform engineering initiatives to imp
 
 Platform Engineering Maturity Model
 - Investment (How are staff and funds allocated to platform capabilities?) - Voluntary or temporary
-- Adoption (Why and how do users discover and use internal platforms and platformcapabilities?) - Erratic
+- Adoption (Why and how do users discover and use internal platforms and platform capabilities?) - Erratic
 - Interfaces (How do users interact with and consume platform capabilities?) - Custom processes
 - Operations (How are platforms and their capabilities planned, prioritized, developed and maintained?) - By request
 - Measurment (What is the process for gathering and incorporating feedback and learning?) - Ad hoc / nonexistent
@@ -60,7 +60,7 @@ Key pillars:
 3. Everything as code
 4. Build golden paths over cages
 5. Be Pareto efficient (80-20) 
-6. Leave pltaform interface choice to the developer
+6. Leave platform interface choice to the developer
 7. Security by design
 8. Measure from the beginning
 9. Gain stakeholder buy-in
